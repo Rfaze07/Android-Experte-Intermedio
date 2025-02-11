@@ -80,12 +80,19 @@ dependencies {
     implementation ("androidx.camera:camera-extensions:${cameraVersion}")
 
 
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+
+    //UnitTesting
     testImplementation(libs.junit)
+    testImplementation("io.kotlintest:kotlintest-runner-junit5:3.4.2")
+    testImplementation("io.mockk:mockk:1.12.3")
+
+
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
